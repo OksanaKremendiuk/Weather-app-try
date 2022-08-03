@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container border">
+      <form class="city-form">
+        <div class="row">
+          <div class="col-6">
+            <input
+              type="search"
+              placeholder="Change a city..."
+              autofocus="on"
+              autocomplete="off"
+              class="form-control shadow-sm"
+              id="city-input"
+            />
+          </div>
+          <div class="col-3">
+            <input
+              type="submit"
+              value="Search"
+              class="form-control btn btn-primary shadow-sm"
+            />
+          </div>
+          <div class="col-3">
+            <button
+              type="button"
+              class="btn btn-outline-success"
+              id="geo-position-button"
+            >
+              Weather in your city
+            </button>
+          </div>
+        </div>
+      </form>
+      <div class="row">
+        <div class="col-sm-2 text-center">
+          <h2>
+            <br />
+            <span class="current-weather">Weather</span>
+            <div>🌧</div>
+          </h2>
+        </div>
+        <div class="col-sm-4">
+          <h1>🏙<span id="current-city">City</span></h1>
+          <h6>
+            <span class="current-day">Friday</span>
+            <div>
+              <span class="current-hour">00</span>:<span class="current-minute"
+                >00</span
+              >
+            </div>
+          </h6>
+          <h2>
+            <div>
+              🌡=<span class="current-temp">00</span
+              ><a href="#" id="celcius-link">℃</a> |
+              <a href="#" id="fahrenheit-link">℉</a>
+            </div>
+          </h2>
+        </div>
+        <div class="col-sm-6">
+          <h5>
+            <br />
+            <ul>
+              <li>
+                Atmospheric pressure -
+                <span class="current-pressure">1</span> hPa
+              </li>
+              <li>Humidity - <span class="current-humidity">00</span> %</li>
+              <li>
+                Wind speed - <span class="current-wind-speed">8</span> km/h
+              </li>
+            </ul>
+            <div class="tips">
+              Tips:
+              <div><em>don't forget an umbrella</em>🌂</div>
+            </div>
+          </h5>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-sm padding border">Today<br />🌧<br />18℃</div>
+        <div class="col-sm padding border">Sat<br />☀<br />20℃</div>
+        <div class="col-sm padding border">Sun<br />☀<br />20℃</div>
+        <div class="col-sm padding border">Mon<br />🌥<br />18℃</div>
+        <div class="col-sm padding border">Tue<br />🌧<br />16℃</div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+h5 {
+  font-size: 1rem;
+}
+.border {
+  border-radius: 10px;
+  border: 1px solid #7007a1;
+}
+.text-center {
+  text-align: center;
+}
+
+.tips {
+  opacity: 0.8;
+}
+.padding {
+  padding: 20px;
+}
+.container {
+  margin: 0 auto;
+  padding: 30px 60px;
+  background: #fff3d3;
+}
+a {
+  text-decoration: none;
+}
